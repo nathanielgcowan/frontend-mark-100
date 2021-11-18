@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
-import Home from './containers/Home';
+import Dogs from './containers/Dogs';
 import About from './components/About';
 import Profile from './components/Profile';
 
@@ -15,7 +15,7 @@ class App extends Component {
             <Header />
           </div>
           <Routes>
-            <Route path='/' component={Home}/>
+            <Route path='/' component={Dogs}/>
             <Route path='/about' component={About}/>
             <Route path='/favorite-dog' component={Profile}/>
             <Route path='/least-favorite-dog' component={Profile}/>
