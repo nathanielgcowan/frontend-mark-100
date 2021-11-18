@@ -1,25 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { fetchDogs } from '../actions/dogActions';
+const Dogs = () => {
+    return (
+        <div>
+            <h1>Dogs Page</h1>
+        </div>
+    );
+};
 
-class Dogs extends Component {
-
-    componementDidMount() {
-        fetch('http://localhost:3001/dogs')
-        .then(response => response.json())
-        .then(data => console.log(data))
-    }
-
-    render() {
-        return (
-            <div>fff</div>
-        );
-    }
-}
-
-const mapStateToProps = state => {
-    // dogs: state.dogs.plural,
-}
-
-export default connect(mapStateToProps, { fetchDogs })(Dogs);
+export default Dogs;

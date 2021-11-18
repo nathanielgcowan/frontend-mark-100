@@ -5,7 +5,7 @@ const inititalState = { plural: [], singular: {} };
 export default function(state =inititalState, action) {
     switch(action.type) {
         case FETCH_DOGS:
-            return ...state, items: action.payload,
+            return {...state, plural: action.payload};
         default:
             return state;
     }
